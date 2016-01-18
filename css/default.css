@@ -28,7 +28,7 @@ html { height: 100%; }
 
 
 body {
-   font-family: 'Open Sans', sans-serif;
+   font-family: "rooney-sans", sans-serif;
     background: #ffffff;
     font-weight: 300;
     font-size: 15px;
@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-   font-family: 'Open Sans', sans-serif;
+    font-family: "rooney-sans", sans-serif;
     font-size: 24px;
     color: #0FDEBD;
     line-height: 1.5em;
@@ -66,21 +66,54 @@ h3 {
 }
 
 h4 {
+  font-family: "rooney-sans", sans-serif;
   color: #888888;
+  font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 60px;
 }
 
-p {
-  text-align: center;
+h5 {
+  color: #FFFFFF;
+  font-family: "rooney-sans", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
 }
 
+h4.project-header {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #0FDEBD;
+  padding: 50px 0px 20px 0px;
+}
+
+p:first-of-type {
+  padding-top: 40px;
+}
+
+h3.pagetitle {
+  font-size: 32px;
+  margin-top: 110px;
+  margin-bottom: 0px;
+  font-family: 'Copernicus Bold', serif;
+  text-transform: none;
+  color: #0FDEBD;
+  padding: 10px 0px;
+}
+
+p {
+  font-family: "rooney-sans", sans-serif;
+  text-align: center;
+  line-height: 1.6em;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 0px 120px;
+}
 
 h3 a, img {
   text-decoration: none;
-
 }
 
 .nav li, .nav a:visited {
@@ -91,6 +124,22 @@ h3 a, img {
   display: block;
  }
 
+a {
+  text-decoration: none;
+  color: #0FDEBD;
+}
+
+a:hover {
+  border-bottom: 2px solid #0FDEBD;
+  text-decoration: none;
+  color: #0FDEBD;
+}
+
+a:visited {
+  color: #0FDEBD;
+  text-decoration: none;
+  border-bottom: none;
+}
 
  .nav a:hover,
 .nav .current-page a,
@@ -117,68 +166,33 @@ li {
   display: inline-block;
   padding: 20px;
 }
-/*about*/
 
-.aboutme {
-  text-align: center;
-  line-height: 1.9em;
-  display: inline-block;
-}
-
-/*page*/
-
-.description a {
+button.btn--block  {
+  border: 2px solid #323232;
+  background-color: #FFFFFF;
   color: #0FDEBD;
-}
-
-.projectlist a:hover {
-  .text-decoration: none;
-  border-bottom: none;
-}
-
-
-.pagetitle {
-  font-size: 32px;
-  margin-top: 110px;
-  margin-bottom: 0px;
-  font-family: 'Copernicus Bold', serif;
-  text-transform: none;
-  color: #0FDEBD;
-  padding: 10px 0px;
-}
-
-.subtitle {
-  color: #888888;
-  padding: 20px 0px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.description { 
-  padding: 50px;
-  line-height: 1.9em;
-}
-
-.projectheader {
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #0FDEBD;
-  padding: 50px 0px 0px 0px;
-}
-
-.walkthrough {
-  color: #0FDEBD;
+  text-decoration: none;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 10px 0px;
+  padding: 10px 10px;
   text-align: center;
   margin: 0px auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: block;
 }
 
-a:hover {
-   border-bottom: 2px solid;
+button:hover {
+  background-color: #0FDEBD;
+  border: 2px solid #0FDEBD;
   text-decoration: none;
-  color: #0FDEBD;
+}
+
+button a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  border-bottom: none;
 }
 
 img {
@@ -195,20 +209,10 @@ header {
   box-sizing: border-box;
 }
 
-a {
-	color: #555;
-	text-decoration: none;
-  text-align: center;
-}
-
 .about {
 	color: #1b1b1b;
- font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
   margin: 0 auto;
-  max-width: 700px;
   padding: 50px 0;
-  width: 90%;
 }
 
 .about a {
@@ -230,40 +234,9 @@ a {
   max-width: 100%;
 }
 
-.container a {
-  text-align: center;
-}
-
-.main > p {
-	text-align: center;
-	padding: 50px 20px;
-}
-
-.pagetitle, .subtitle, .projectheader, .description {
-  text-align: center;
-}
-
-
 /* ABOUT PAGE */
 
-.social_icons {
-  text-align: center;
-  padding: 30px 10px;
-  text-align: center;
-  text-decoration: none;
-  max-width: 100%;
-  display: block;
-}
-
-.social_icons img {
-  display: inline-block;
-  float: center;
-  width: 40px;
-  max-width: 100%;
-  margin: 0px 5px;
-}
-
-.headshot img {
+img.headshot {
   display: block;
   margin: 0 auto;
   width: 60%;
@@ -277,19 +250,23 @@ a {
   text-align: center;
   margin: 30px 0px 0px 0px;
   color: #FFFFFF;
+  vertical-align: top;
 }
 
-.footer-links {
+.footer__links {
   display: inline-block;
   position: relative;
-  margin: 0px 10px;
+  margin: 0px 40px;
+  vertical-align: top;
+  padding-top: 6rem;
 }
 
-.footer-links li {
+.footer__links a {
   display: block;
   padding: 10px 0px;
   text-align: center;
   margin: 0px auto;
+  color: #FFFFFF;
 }
 
 
@@ -315,22 +292,6 @@ ul#nav {
   margin-top: 20px;
 } 
 
-.social-links {
-  text-align: center;
-  margin: 0px auto;
-}
-
-.social-links a {
-  color: #FFFFFF;
-  text-align: center;
-  list-style: none;
-  margin: 0px auto;
-}
-
-.header-details {
-  padding-top: 40px;
-}
-
 /* BLOG CONTENT */
 
 .blog-content {
@@ -341,7 +302,7 @@ ul#nav {
 }
 
 .blog-title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "rooney-sans", sans-serif;
   font-size: 24px;
   color: #0FDEBD;
   line-height: 1.5em;
@@ -372,10 +333,16 @@ ul#nav {
 }
 
 .blog--entry {
-  padding-bottom: 20px;
+  padding-bottom: 5rem;
+}
+
+.blog--entry:last-child {
+  padding-bottom: 20rem;
 }
 
 time {
+  font-family: "rooney-sans", sans-serif;
+  color: #1226DD;
   margin: 0px auto;
   text-align: center;
   padding-top: 10px;
@@ -391,6 +358,7 @@ time {
   font-size: 22px;
   margin: 20px 0px;
   padding: 20px 180px;
+  text-align: center;
 }
 
 /* MEDIA QUERIES */
@@ -407,6 +375,10 @@ time {
   .blog-content {
     padding: 0px 10px;
   }
+
+  p {
+    padding: 10px;
+  }
 }
 
 /* ----------- iPhone 6 ----------- */
@@ -418,6 +390,9 @@ time {
   }
   .blog-content {
     padding: 0px 10px;
+  }
+   p {
+    padding: 10px;
   }
 }
 
@@ -432,6 +407,9 @@ time {
   .blog-content {
     padding: 0px 10px;
   }
+   p {
+    padding: 10px;
+  }
 }
 
 /*-------------iPad----------*/
@@ -443,9 +421,16 @@ time {
   .blog-content {
     padding: 0px 10px;
   }
+   p {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 480px) { 
+
+   p {
+    padding: 10px;
+  }
 
 header {
   text-align: center;
@@ -459,12 +444,6 @@ ul#nal {
   display: block;
   text-align: center;
   padding-top: 10px;
-}
-
-.social_icons {
-  text-align: center;
-  text-decoration: none;
-  display: block;
 }
 
 .headshot > img {
