@@ -1,0 +1,12 @@
+.containerheader {
+  width: 560px;
+  position: relative;
+  @extend %centered;
+}
+
+.container {
+	margin: 0px auto;
+ 	overflow: hidden;
+	width: 960px;
+	max-width: 100%;
+}

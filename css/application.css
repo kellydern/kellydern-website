@@ -1,0 +1,305 @@
+/* --------------------------------------------------------
+Style Sheet for Kelly Dern's portfolio
+
+author: Kelly Dern
+email: hello@kellydern.com
+website: http://www.kellydern.com
+Tools: CodeKit, Git for Desktop, Sublime, Csswizardry Grids  
+----------------------------------------------------------*/
+html {
+  height: 100%; }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0; }
+
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+body {
+  font-family: "rooney-sans", sans-serif;
+  background-color: #FFFFFF;
+  font-weight: 300;
+  font-size: 15px;
+  color: #1b1b1b;
+  overflow: scroll;
+  overflow-x: hidden; }
+
+h1 {
+  font-family: "Copernicus Bold", serif;
+  font-size: 60px;
+  color: #0FDEBD;
+  margin: 20px auto; }
+
+h2 {
+  font-family: "rooney-sans", sans-serif;
+  font-size: 24px;
+  color: #0FDEBD;
+  line-height: 1.5em;
+  float: left;
+  font-weight: 700; }
+
+h3 {
+  font-family: "Copernicus Bold", serif;
+  font-size: 24px;
+  color: #0FDEBD;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding: 20px 0px 40px;
+  @extender %t-decoration; }
+
+h4 {
+  font-family: "rooney-sans", sans-serif;
+  color: #888888;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 60px; }
+
+h5 {
+  color: #FFFFFF;
+  font-family: "rooney-sans", sans-serif;
+  font-weight: 300;
+  font-size: 22px; }
+
+h4.project-header {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #0FDEBD;
+  padding: 50px 0px 20px 0px; }
+
+p:first-of-type {
+  padding-top: 40px; }
+
+h3.pagetitle {
+  font-size: 32px;
+  margin-top: 110px;
+  margin-bottom: 0px;
+  font-family: "Copernicus Bold", serif;
+  text-transform: none;
+  color: #0FDEBD;
+  padding: 10px 0px; }
+
+p {
+  font-family: "rooney-sans", sans-serif;
+  line-height: 1.6em;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 0px 120px; }
+
+.nav li, .nav a:visited {
+  color: #1b1b1b;
+  float: right;
+  display: block; }
+
+a:link {
+  color: #0FDEBD; }
+a:hover {
+  border-bottom: 2px solid #0FDEBD;
+  color: #0FDEBD; }
+a:visited {
+  color: #0FDEBD;
+  border-bottom: none; }
+
+.nav a:hover,
+.nav .current-page a,
+.nav .current-project a,
+.nav .current-tag a {
+  color: #0FDEBD;
+  border-bottom: 2px solid #0FDEBD; }
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+  list-style: none; }
+
+.nav h2 a:hover {
+  border-bottom: none; }
+
+img {
+  width: 100%;
+  padding: 20px 0px; }
+
+.projectlist > a:hover {
+  border-bottom: none; }
+
+img.headshot {
+  display: block;
+  margin: 0 auto;
+  width: 60%; }
+
+.kelly-logo {
+  max-width: 100%;
+  width: 80px;
+  display: inline-block;
+  padding: 20px 0px; }
+
+nav {
+  float: right;
+  margin-top: 30px; }
+
+.about {
+  color: #1b1b1b;
+  margin: 0 auto;
+  padding: 50px 0; }
+
+.about a {
+  border-bottom: 2px solid;
+  text-decoration: none;
+  color: #0FDEBD; }
+
+.blog-content {
+  text-align: left;
+  margin: 0 0 10px;
+  padding: 0px 180px;
+  line-height: 1.6em; }
+
+.blog-title {
+  font-family: "rooney-sans", sans-serif;
+  font-size: 24px;
+  color: #0FDEBD;
+  line-height: 1.5em;
+  font-weight: 300;
+  text-align: center; }
+
+.blog--subheader {
+  display: block; }
+
+.blog--category {
+  background-color: #EAEAEA;
+  color: #FFFFFF;
+  padding: 6px 20px;
+  width: 100px;
+  text-decoration: none;
+  margin: 0px auto; }
+
+.blog--category a, .blog--category a:hover {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+.blog--description {
+  text-align: center; }
+
+.blog--entry {
+  padding-bottom: 5rem; }
+
+.blog--entry:last-child {
+  padding-bottom: 20rem; }
+
+time {
+  font-family: "rooney-sans", sans-serif;
+  color: #1226DD;
+  margin: 0px auto;
+  padding-top: 10px;
+  display: block;
+  font-weight: 600; }
+
+.blog--intro {
+  font-family: 'Copernicus Bold Italic';
+  color: #1226DD;
+  line-height: 1.7em;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 20px 0px;
+  padding: 20px 180px; }
+
+.containerheader {
+  width: 560px;
+  position: relative; }
+
+.container {
+  margin: 0px auto;
+  overflow: hidden;
+  width: 960px;
+  max-width: 100%; }
+
+h1, h3, h4, p, time, .blog--intro, .containerheader, .footer__links a, button.btn--block {
+  text-align: center; }
+
+button:hover {
+  border: 2px solid #0FDEBD; }
+
+h3 a, img, .nav li, .nav a:visited, a:link, a:hover, a:visited, .nav h2 a:hover, .projectlist > a:hover, button.btn--block, button:hover, button a:hover {
+  text-decoration: none; }
+
+.footer {
+  padding: 100px 0px;
+  background-color: #0FDEBD;
+  text-align: center;
+  margin: 30px 0px 0px 0px;
+  color: #FFFFFF;
+  vertical-align: top; }
+
+.footer__links {
+  display: inline-block;
+  position: relative;
+  margin: 0px 40px;
+  vertical-align: top;
+  padding-top: 6rem; }
+
+.footer__links a {
+  display: block;
+  padding: 10px 0px;
+  margin: 0px auto;
+  color: #FFFFFF; }
+
+header {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box; }
+
+ul#nav {
+  display: inline-block;
+  float: right;
+  padding-top: 20px;
+  margin-top: 20px; }
+
+.kellylogo {
+  float: left;
+  width: 20%;
+  display: inline-block;
+  padding: 20px; }
+
+button.btn--block {
+  border: 2px solid #323232;
+  background-color: #FFFFFF;
+  color: #0FDEBD;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: block; }
+button:hover {
+  background-color: #0FDEBD; }
+button a:hover {
+  color: #FFFFFF;
+  border-bottom: none; }
+
+@font-face {
+  font-family: 'Copernicus Bold';
+  src: url(../fonts/Copernicus-Bold.eot);
+  src: url(../fonts/Copernicus-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Copernicus-Bold.woff) format("woff"), url(../fonts/Copernicus-Bold.svg) format("svg"); }
+@font-face {
+  font-family: 'Copernicus Bold Italic';
+  src: url(../fonts/Copernicus-BoldItalic.eot);
+  src: url(../fonts/Copernicus-BoldItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/Copernicus-BoldItalic.woff) format("woff"), url(../fonts/Copernicus-BoldItalic.svg) format("svg"); }
+
+/*# sourceMappingURL=application.css.map */

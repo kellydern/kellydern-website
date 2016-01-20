@@ -1,0 +1,209 @@
+
+/* --------------------------------------------------------
+Style Sheet for Kelly Dern's portfolio
+
+author: Kelly Dern
+email: hello@kellydern.com
+website: http://www.kellydern.com
+Tools: CodeKit, Git for Desktop, Sublime, Csswizardry Grids  
+----------------------------------------------------------*/
+
+html { height: 100%; }
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+   font-family: $stack-sans-serif;
+     background-color: $color-body;
+    font-weight: 300;
+    font-size: 15px;
+    color: #1b1b1b;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+h1 {
+  font-family: $stack-serif;
+  font-size: 60px;
+	color: $color-prim;
+  margin: 20px auto;
+  @extend %centered; 
+}
+
+h2 {
+    font-family: $stack-sans-serif;
+    font-size: 24px;
+    color: $color-prim;
+    line-height: 1.5em;
+    float: left;
+    font-weight: 700;
+}
+
+h3 {
+   font-family: $stack-serif;
+    font-size: 24px;
+    color: $color-prim;
+    line-height: 1.5em;
+    margin: 0 auto;
+    @extend %centered; 
+    padding: 20px 0px 40px;
+    @extender %t-decoration;
+}
+
+h4 {
+  font-family: $stack-sans-serif;
+  color: #888888;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  @extend %centered; 
+  padding-bottom: 60px;
+}
+
+h5 {
+  color: $color-body;
+  font-family: $stack-sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+h4.project-header {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $color-prim;
+  padding: 50px 0px 20px 0px;
+}
+
+p:first-of-type {
+  padding-top: 40px;
+}
+
+h3.pagetitle {
+  font-size: 32px;
+  margin-top: 110px;
+  margin-bottom: 0px;
+  font-family: $stack-serif;
+  text-transform: none;
+  color: $color-prim;
+  padding: 10px 0px;
+}
+
+p {
+  font-family: $stack-sans-serif;
+  @extend %centered; 
+  line-height: 1.6em;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 0px 120px;
+}
+
+h3 a, img {
+  @extend %t-decoration;
+}
+
+.nav li, .nav a:visited {
+  color: #1b1b1b;
+  @extend %t-decoration;
+  float: right;
+  display: block;
+ }
+
+a {
+  &:link {
+    @extend %t-decoration;
+    color: $color-prim;
+  }
+
+    &:hover {
+      border-bottom: 2px solid $color-prim;
+      @extend %t-decoration;
+      color: $color-prim;
+    }
+
+  &:visited {
+    color: $color-prim;
+    @extend %t-decoration;
+    border-bottom: none;
+  }
+}
+
+ .nav a:hover,
+.nav .current-page a,
+.nav .current-project a,
+.nav .current-tag a {
+	color: $color-prim;
+	border-bottom: 2px solid $color-prim;  
+}
+
+li {
+	display: inline;
+	padding: 0px 10px 0px 10px;
+  list-style: none;
+}
+
+.nav h2 a:hover {
+  @extend %t-decoration;
+  border-bottom: none;
+}
+
+img {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.projectlist > a:hover {
+  @extend %t-decoration;
+  border-bottom: none;
+}
+
+img.headshot {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.kelly-logo {
+  max-width: 100%;
+  width: 80px;
+  display: inline-block;
+  padding: 20px 0px;
+}
+
+nav {
+  float: right;
+  margin-top: 30px;
+}
+
+.about {
+  color: #1b1b1b;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.about a {
+  border-bottom: 2px solid;
+  text-decoration: none;
+  color: $color-prim;
+}

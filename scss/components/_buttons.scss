@@ -1,0 +1,30 @@
+button {
+  &.btn--block  {
+    border: 2px solid #323232;
+    background-color: $color-body;
+    color: $color-prim;
+    @extend %t-decoration; 
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    @extend %centered; 
+    margin: 0px auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block;
+}
+
+  &:hover {
+    background-color: $color-prim;
+    @extend %b-border; 
+    @extend %t-decoration;
+}
+
+  & a:hover {
+    color: $color-body;
+    @extend %t-decoration;
+    border-bottom: none;
+  }
+}
+
