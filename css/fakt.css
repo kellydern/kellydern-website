@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'FaktSoftPro Blond';
+    src: url(../fonts/FaktSoftPro-Blond.eot);
+    src: url(../fonts/FaktSoftPro-Blond?#iefix) format('embedded-opentype'),
+    url(../fonts/FaktSoftPro-Blond.woff) format('woff'), 
+    url(../fonts/FaktSoftPro-Blond.svg) format('svg')
+}
+
+@font-face {
+    font-family: 'FaktSoftPro-SemiBold';
+    src: url(../fonts/FaktSoftPro-SemiBold.eot);
+    src: url(../fonts/FaktSoftPro-SemiBold?#iefix) format('embedded-opentype'),
+    url(../fonts/FaktSoftPro-SemiBold.woff) format('woff'), 
+    url(../fonts/FaktSoftPro-SemiBold.svg) format('svg')
+}
+
